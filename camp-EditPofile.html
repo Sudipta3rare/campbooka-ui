@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/settings.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <title>Camp-EditPofile</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-bottom inner">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="image text-center text-md-left">
+                <img class="img-fluid" src="images/logo.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div
+                class="top-links d-flex justify-content-center justify-content-md-end align-items-center"
+              >
+                <a class="inbox" href="#">Account</a>
+                <a class="inbox" href="#">Inbox</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="service-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="privacy-sec">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a
+                    class="nav-item nav-link active"
+                    id="nav-mobile-tab"
+                    data-toggle="tab"
+                    href="#nav-mobile"
+                    role="tab"
+                    aria-controls="nav-mobile"
+                    aria-selected="true"
+                    >Edit Pofile</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="nav-front-end-tab"
+                    data-toggle="tab"
+                    href="#nav-front-end"
+                    role="tab"
+                    aria-controls="nav-front-end"
+                    aria-selected="false"
+                    >Email & SMS</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="nav-database-tab"
+                    data-toggle="tab"
+                    href="#nav-database"
+                    role="tab"
+                    aria-controls="nav-database"
+                    aria-selected="false"
+                    >Change password</a
+                  >
+
+                  <a
+                    class="nav-item nav-link"
+                    id="nav-database-tab3"
+                    data-toggle="tab"
+                    href="#nav-database3"
+                    role="tab"
+                    aria-controls="nav-database"
+                    aria-selected="false"
+                    >Logout</a
+                  >
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-mobile"
+                role="tabpanel"
+                aria-labelledby="nav-mobile-tab"
+              >
+                <div class="service-box">
+                  <div class="image-upload">
+                    <h4>Edit your pofile</h4>
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                      <p style="margin: 15px">Personal Information</p>
+                    </div>
+                    <div style="margin-bottom: 25px" class="p-image">
+                      <p>Pofile picture</p>
+                      <i class="fa fa-camera upload-button"></i>
+                      <input class="file-upload" type="file" accept="image/*" />
+                    </div>
+                    <form class="rd-mailform1">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="First Name"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Middle Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Last Name"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="Email Address"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  placeholder="Facebook"
+                                  required
+                                />
+                                <a
+                                  href="#"
+                                  class="btn btn-primary btn-sm btn-2 facebook"
+                                  >Connect</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="d-flex align-items-center">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <p style="margin: 15px">Contact Information</p>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Street address"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Apt or suite no"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="City"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="State"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  placeholder="Zip code"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  placeholder="Phone number"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p style="margin-top: 29px">
+                            How you publicly appear on this site
+                          </p>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Camper URL"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Bio"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Public Location"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="Personal URL"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  placeholder="Instagram Handle"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  class="form-control"
+                                  placeholder="Twitter Handle"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button
+                        class="contact_submit_btn btn btn-primary btn-sm btn-2"
+                        type="submit"
+                      >
+                        Save Change
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="nav-front-end"
+                role="tabpanel"
+                aria-labelledby="nav-front-end-tab"
+              >
+                <div class="service-box">
+                  <div class="service-box-details">
+                    <h2>Email and SMS</h2>
+                    <div class="d-flex align-items-center edit">
+                      <i class="fa fa-envelope-o fa-x" aria-hidden="true"></i>
+
+                      <h5>Optional Communication from the CampBooka Team</h5>
+                    </div>
+                    <form class="form-1" action="/action_page.php">
+                      <input
+                        type="checkbox"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />
+                      <label for="vehicle1"> Personalized Recommendation</label
+                      ><br />
+                      <p>sent to share</p>
+                      <input
+                        type="checkbox"
+                        id="vehicle2"
+                        name="vehicle2"
+                        value="Car"
+                      />
+                      <label for="vehicle2">
+                        Exclusive offers,news and tips </label
+                      ><br />
+                      <p>sent 1-2 times every few months</p>
+                      <input
+                        type="checkbox"
+                        id="vehicle3"
+                        name="vehicle3"
+                        value="Boat"
+                      />
+                      <label for="vehicle3"> New Feature announcements</label
+                      ><br />
+                      <p>sent 1-4 times a year</p>
+                      <input
+                        type="checkbox"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />
+                      <label for="vehicle1"> Feedback and surveys</label><br />
+                      <p>sent</p>
+                      <input
+                        type="checkbox"
+                        id="vehicle2"
+                        name="vehicle2"
+                        value="Car"
+                      />
+                      <label for="vehicle2"> Safety tips and reminders </label
+                      ><br />
+                      <p>sent when we have important safety info or feedback</p>
+                      <br />
+                    </form>
+                  </div>
+
+                  <div class="service-box-details">
+                    <div class="d-flex align-items-center edit-1">
+                      <i class="fa fa-envelope-o fa-x" aria-hidden="true"></i>
+                      <i
+                        style="margin-left: 20px"
+                        class="fa fa-mobile fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                      <h5>Camp Experience Communication</h5>
+                    </div>
+                    <form class="form-2" action="/action_page.php">
+                      <input
+                        type="checkbox"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />
+                      <label for="vehicle1"> New messages</label><br />
+                      <p>sent every time you receive a message</p>
+                      <input
+                        type="checkbox"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />
+                      <label for="vehicle1">Booking request notification</label
+                      ><br />
+                      <p>
+                        sent every time an update to a booking request is made
+                      </p>
+                      <input
+                        type="checkbox"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />
+                      <label for="vehicle1">
+                        Booking confirmation notification</label
+                      ><br />
+                      <p>
+                        sent every time you received or make a confirmed booking
+                      </p>
+                      <input
+                        type="checkbox"
+                        id="vehicle2"
+                        name="vehicle2"
+                        value="Car"
+                      />
+                      <label for="vehicle2">
+                        Booking cancellation and modification notification </label
+                      ><br />
+                      <p>
+                        sent every time you received or make a confirmed booking
+                      </p>
+                      <input
+                        type="checkbox"
+                        id="vehicle3"
+                        name="vehicle3"
+                        value="Boat"
+                      />
+                      <label for="vehicle3">Booking reminder notification</label
+                      ><br />
+                      <p>sent before your booking starts</p>
+                      <input
+                        type="checkbox"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />
+                      <label for="vehicle1">
+                        Review trip reminder notification</label
+                      ><br />
+                      <p>
+                        one text message and up to 4 emails sent after every
+                        trip
+                      </p>
+                      <input
+                        type="checkbox"
+                        id="vehicle2"
+                        name="vehicle2"
+                        value="Car"
+                      />
+                      <label for="vehicle2"> Account support </label><br />
+                      <p>
+                        we may need to send you message regarding your camp
+                        account
+                      </p>
+                      <br />
+                      <button
+                        style="margin-left: 395px"
+                        class="btn btn-primary btn-sm btn-2"
+                      >
+                        Save change
+                      </button>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="other" style="margin-top: 50px">
+                  <div class="d-flex align-items-center others">
+                    <i class="fa fa-envelope-o fa-x" aria-hidden="true"></i>
+                    <i
+                      style="margin-left: 20px"
+                      class="fa fa-mobile fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                    <h5>Other System Communication you may receive</h5>
+                  </div>
+
+                  <div class="notifiaction">
+                    <p>
+                      Referal notification
+                      <span
+                        >sent every time you earn or are given referal
+                        credit</span
+                      >
+                    </p>
+                    <p>
+                      Invited to trip notification
+                      <span
+                        >sent every time a fellow camper invite on their
+                        upcoming Trips</span
+                      >
+                    </p>
+                    <p>
+                      Gift card notification
+                      <span
+                        >sent every time you send or receive a camp gift
+                        card</span
+                      >
+                    </p>
+                    <p>
+                      Camper photographer notification
+                      <span
+                        >send when new assignments become available in your
+                        area</span
+                      >
+                    </p>
+                    <p>
+                      Forget your password notifiaction
+                      <span
+                        >sent every time you earn or are given referal
+                        credit</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="nav-database"
+                role="tabpanel"
+                aria-labelledby="nav-database-tab"
+              >
+                <div class="service-box">
+                  <div class="forget-form-sec-tab">
+                    <div class="container">
+                      <form class="rd-mailform1">
+                        <div class="row">
+                          <div class="rd-mailform1-wrap">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <h4>Update Password !</h4>
+                                <div class="input-container d-flex">
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    placeholder="Current Password"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <div class="input-container d-flex">
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    placeholder="New Password"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <div class="input-container d-flex">
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    placeholder="Confirm New Password"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-center">
+                              <button
+                                class="contact_submit_btn btn"
+                                type="submit"
+                              >
+                                Submit
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="nav-database3"
+                role="tabpanel"
+                aria-labelledby="nav-database-tab3"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

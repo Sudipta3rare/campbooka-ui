@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="img/logo.png" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/settings.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        
+      
+        <title>camper-book</title>
+      </head>
+<body>
+
+
+    <header>
+        <div class="header-colours">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="45" height="45" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="gap: 20px;
+                align-items: baseline;">
+                  <li class="nav-item">
+                    <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search Dates Guests" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </form>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Host Dashboard
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="hostcalender.html">Calendar</a>
+                      <a class="dropdown-item" href="viewproperty.html">Property</a>
+                      <a class="dropdown-item" href="#">Extras</a>
+                      <a class="dropdown-item" href="#">Insurance</a>
+                      <a class="dropdown-item" href="#">Payouts & Taxes</a>
+                      <a class="dropdown-item" href="#">Resources</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="host-inbox.html">Inbox</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="images/logo.png" width="45" height="45" alt="" >
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Account</a>
+                      <a class="dropdown-item" href="#">Payouts</a>
+                      <a class="dropdown-item" href="#">Trips</a>
+                      <a class="dropdown-item" href="#">Saves</a>
+                      <a class="dropdown-item" href="#">FAQ</a>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+           </div>
+        </div>
+       
+      </header>
+
+
+      <section>
+
+        <div class="container" style="margin-top: 20px;">
+ 
+            <h1 class="Property-title">Camp Topisaw</h1>
+
+            <div class="btn-gr">
+                <div class="all-btns">
+                 <a href="#">  see available sites</a>
+                 <a href="#"  data-toggle="modal" data-target="#exampleModal1" ><i class="fa fa-upload" aria-hidden="true"></i> share</a>
+                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> save</a>
+                </div>
+
+            </div>
+        </div>
+
+      </section>
+
+
+      <section class="all-imgs">
+
+        <div class="container">
+         <div class="row" style="padding: 20px 0;">
+          <div class="col-md-6">
+             <div class="allimg-wrap1">
+              <img src="images/g4.png" alt="">
+             </div>
+          </div>
+          <div class="col-md-6">
+           <div class="row">
+            <div class="col-md-6">
+             <img src="images/g1.png" alt="">
+            </div>
+            <div class="col-md-6">
+             <img src="images/g1.png" alt="">
+            </div>
+            <div class="col-md-6" style="margin-top: 15px;">
+                <img src="images/g1.png" alt="">
+               </div>
+               <div class="col-md-6" style="margin-top: 15px;">
+                <img src="images/g1.png" alt="">
+                <a class="view-all-bts" href="">view all</a>
+               </div>
+           </div>
+          </div>
+         </div>
+        </div>
+      </section>
+
+
+      <section class="tent-des">
+        <div class="container">
+          <div class="row">
+          <div class="col-md-7">
+            <div class="sites-wrap d-flex">
+
+                <div class="sites">
+                <p>
+                    95 acres
+                    <span class="d-block"> 8 sites</span>
+                </p>
+                
+
+
+                </div>
+                
+            </div>
+
+            <p class="property-des1">
+                95 acres on the beautiful Topisaw Creek. Here we've raised 5 kids and a multitude of dogs, cats and chickens and a small herd of pineywoods cattle. The woods are quiet and undisturbed , harboring native species like jack in the pulpit, trillium and Florida anise. The spring-fed (and thus always refreshing!) Topisaw Creek forms the eastern border of our property, so plan to spend
+            </p>
+
+
+
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    <div class="facilites-list">
+                     <h5 > Activites</h5>
+                     <ul>
+                        <li>
+                            <i class="fa fa-tree" aria-hidden="true"></i>
+                            Fishing
+                        </li>
+                        <li>
+                            <i class="fa fa-tree" aria-hidden="true"></i>
+                            Fishing
+                        </li>
+                        <li><i class="fa fa-tree" aria-hidden="true"></i>
+                            Fishing</li>
+                        <li><i class="fa fa-tree" aria-hidden="true"></i>
+                            Fishing</li>
+                        <li><i class="fa fa-tree" aria-hidden="true"></i>
+                            Fishing</li>
+                    </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="facilites-list">
+                        <h5 style="margin-left: 40px;"> Feature</h5>
+                        <ul>
+                           <li>
+                               <i class="fa fa-tree" aria-hidden="true"></i>
+                               Fishing
+                           </li>
+                           <li>
+                               <i class="fa fa-tree" aria-hidden="true"></i>
+                               Fishing
+                           </li>
+                           <li><i class="fa fa-tree" aria-hidden="true"></i>
+                               Fishing</li>
+                           <li><i class="fa fa-tree" aria-hidden="true"></i>
+                               Fishing</li>
+                           <li><i class="fa fa-tree" aria-hidden="true"></i>
+                               Fishing</li>
+                       </ul>
+                       </div>
+                </div>
+
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="viewproperty">
+        <div class="container">
+        <div class="viewproperty-wrap" >
+           <div class="row">
+            <div class="col-md-12" style="padding: 25px 0;">
+             <div class="viewproperty-wrap-box">
+                <div class="row align-items-center">
+                  <div class="col-md-3">
+                    <div class="pic-wrap">
+                        <img src="images/g1.png" alt="camp1">
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="des-wrap">
+                        <h6>Property name : <span>Baskervilles </span></h6>
+                        <p class="t1">Property Type : <span>Tiny Cottage</span> </p>
+                        <p class="t2">Area: <span> 400 sq-ft</span></p>
+                        <p class="t3">Description :<span> Entire studio • 1 bathroom • 21m² 1 full bed</span><br><span>Studio Apartment with Air conditioning</span></p>
+                        <p class="t4">Location: <span> Kolkata</span></p>
+                        <span class="siTaxiOp">Free airport taxi</span>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="update-wrap">
+                        <div class="siDetails"><div class="siRating"><span>Excellent</span><button>8.9</button></div><div class="siDetailTexts"><span class="siPrice">$112</span><span class="siTaxOp">Includes taxes and fees</span><a href="checkoutrule.html" class="btn btn-primary btn-sm ">Reserve</a></div></div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+            </div>
+            <div class="col-md-12"  style="padding: 25px 0;" >
+                <div class="viewproperty-wrap-box">
+                   <div class="row align-items-center">
+                     <div class="col-md-3">
+                       <div class="pic-wrap">
+                           <img src="images/g2.png" alt="camp1">
+                       </div>
+                     </div>
+                     <div class="col-md-7">
+                       <div class="des-wrap">
+                           <h6>Property name : <span>Baskervilles </span></h6>
+                           <p class="t1">Property Type : <span>Tiny Cottage</span> </p>
+                           <p class="t2">Area: <span> 400 sq-ft</span></p>
+                           <p class="t3">Description :<span> Entire studio • 1 bathroom • 21m² 1 full bed</span><br><span>Studio Apartment with Air conditioning</span></p>
+                           <p class="t4">Location: <span> Kolkata</span></p>
+                           <span class="siTaxiOp">Free airport taxi</span>
+                       </div>
+                     </div>
+                     <div class="col-md-2">
+                       <div class="update-wrap">
+                           <div class="siDetails"><div class="siRating"><span>Excellent</span><button>8.9</button></div><div class="siDetailTexts"><span class="siPrice">$112</span><span class="siTaxOp">Includes taxes and fees</span><a href="checkoutrule.html" class="btn btn-primary btn-sm">Reserve</a></div></div>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+               </div>
+               <div class="col-md-12"  style="padding: 25px 0;">
+                <div class="viewproperty-wrap-box">
+                   <div class="row align-items-center">
+                     <div class="col-md-3">
+                       <div class="pic-wrap">
+                           <img src="images/g4.png" alt="camp1">
+                       </div>
+                     </div>
+                     <div class="col-md-7">
+                       <div class="des-wrap">
+                           <h6>Property name : <span>Baskervilles </span></h6>
+                           <p class="t1">Property Type : <span>Tiny Cottage</span> </p>
+                           <p class="t2">Area: <span> 400 sq-ft</span></p>
+                           <p class="t3">Description :<span> Entire studio • 1 bathroom • 21m² 1 full bed</span><br><span>Studio Apartment with Air conditioning</span></p>
+                           <p class="t4">Location: <span> Kolkata</span></p>
+                           <span class="siTaxiOp">Free airport taxi</span>
+                       </div>
+                     </div>
+                     <div class="col-md-2">
+                       <div class="update-wrap">
+                           <div class="siDetails"><div class="siRating"><span>Excellent</span><button>8.9</button></div><div class="siDetailTexts"><span class="siPrice">$112</span><span class="siTaxOp">Includes taxes and fees</span><a href="#" class="btn btn-primary btn-sm">Reserve</a></div></div>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+               </div>
+
+               <div class="col-md-12"  style="padding: 25px 0;">
+                <div class="viewproperty-wrap-box">
+                   <div class="row align-items-center">
+                     <div class="col-md-3">
+                       <div class="pic-wrap">
+                           <img src="images/g4.png" alt="camp1">
+                       </div>
+                     </div>
+                     <div class="col-md-7">
+                       <div class="des-wrap">
+                           <h6>Property name : <span>Baskervilles </span></h6>
+                           <p class="t1">Property Type : <span>Tiny Cottage</span> </p>
+                           <p class="t2">Area: <span> 400 sq-ft</span></p>
+                           <p class="t3">Description :<span> Entire studio • 1 bathroom • 21m² 1 full bed</span><br><span>Studio Apartment with Air conditioning</span></p>
+                           <p class="t4">Location: <span> Kolkata</span></p>
+                           <span class="siTaxiOp">Free airport taxi</span>
+                       </div>
+                     </div>
+                     <div class="col-md-2">
+                       <div class="update-wrap">
+                           <div class="siDetails"><div class="siRating"><span>Excellent</span><button>8.9</button>
+                         </div>
+                           <div class="siDetailTexts"><span class="siPrice">$112</span><span class="siTaxOp">Includes taxes and fees</span>
+                         <a href="#" class="btn btn-primary btn-sm">Reserve</a></div>
+                        </div>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+               </div>
+
+           </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="host-details">
+        <div class="container">
+             <div class="pof-wrap d-flex">
+            <img src="images/sf3.png" alt="">
+            <p>Hosted by David <span class="d-block">Joined in August 2018</span></p> 
+        </div>
+         
+        <a href="#"  data-toggle="modal" data-target="#exampleModal">Connect Host</a></div>  
+
+
+     
+      
+      </section>
+
+
+      <section class="more-like-wrap">
+        <h2>Things To Do</h2>
+        <div class="more-like">
+          <div class="owl-carousel owl-theme" id="similar-products">
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more-like-wrap">
+        <h2>Camper also viewed</h2>
+        <div class="more-like">
+          <div class="owl-carousel owl-theme" id="similar-products1">
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more-like-wrap">
+        <h2>More camping spots nearby</h2>
+        <div class="more-like">
+          <div class="owl-carousel owl-theme" id="similar-products2">
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="siteview.html" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="siteview.html" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  <a href="#" class="product-img">
+                    <img src="images/g1.png" alt="owl1" />
+                    <span>Lorem ipsum dolor sit amet consectetur </span>
+                    <span> $ 798</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="safetys">
+        <div class="container">
+          <h4>Safety at Hipcamp</h4>
+         <div class="row">
+          <div class="col-md-12">
+           <div class="Policy">
+            <div class="row">
+              <div class="col-md-9">
+                <div class="policy-detail">
+                  <h5>Inclusion Policy</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam magni qui, ullam nulla consequatur aperiam </p>
+                  <a href="#">Learn More</a>
+                  
+       
+                 </div>
+              </div>
+              <div class="col-md-3">
+                <div class="policy-detail">
+                 <img src="images/tent1.png" alt="">
+                </div>
+              </div>
+            
+             </div>
+           </div>
+           
+          </div>
+          
+
+
+          <div class="col-md-6">
+            <div class="Policy">
+              <h5>Hosting Standards </h5>
+              <span class="d-block">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure deserunt, obcaecati, numquam sapiente accusantium animi 
+                </span>
+              <a href="#">Learn More</a>
+
+            </div>
+
+            
+          
+          </div>
+
+          <div class="col-md-6">
+            <div class="Policy">
+              <h5>Hosting Standards </h5>
+              <span class="d-block">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure deserunt, obcaecati, numquam sapiente accusantium animi 
+                              </span>
+              <a href="#">Learn More</a>
+
+            </div>
+
+            
+          
+          </div>
+         </div>
+        </div>
+       </section>
+
+
+      <section class="partner">
+        <div class="container">
+          <div class="section-head">
+            <h3>Safety <span>partners</span></h3>
+          </div>
+          <div class="partner-wrap">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="partner-wrap-box">
+                  <img src="images/p1.png" alt="" />
+                  <h4>Recreate Responsibly</h4>
+                  <p>1. Know before you go</p>
+                  <p>2. Practice physical distancing</p>
+                  <p>3. Plan ahead</p>
+                  <p>4. Play it safe</p>
+                  <p>5. Explore locally</p>
+                  <p>6. Leave no trace</p>
+                  <p>7. Build an inclusive outdoors</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="partner-wrap-box">
+                  <img src="images/p2.png" alt="" />
+                  <h4>Leave No Trace</h4>
+                  <p>1. Plan ahead and prepare</p>
+                  <p>2. Travel and camp on durable surfaces</p>
+                  <p>3. Dispose of waste properly</p>
+                  <p>4. Leave what you find</p>
+                  <p>5. Minimize campfire impacts</p>
+                  <p>6. Respect wildlife</p>
+                  <p>7. Be considerate of others</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="partner-wrap-box">
+                  <img src="images/p3.png" alt="" />
+                  <h4>National Weather Service</h4>
+                  <p>
+                    We integrate with the National Weather Service to provide
+                    valuable fire advisories to Hosts and Hipcampers. Real-time
+                    Red Flag Warnings and Fire Weather Watch Warnings help keep
+                    our community safe.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+     
+
+
+
+      <footer class="footer-main">
+        <div class="container">
+          <div class="footer-logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+          <div class="footer-top">
+            <div class="footer-wrap">
+              <div class="row">
+                <div class="col-md-3">
+                  <h4>Contact Us</h4>
+                  <ul class="footer-contact">
+                    <li>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i
+                      ><a href="#">123 Our Address</a>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone" aria-hidden="true"></i
+                      ><a href="tel:0433355558">0433355558</a>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope" aria-hidden="true"></i
+                      ><a href="mailto:info@blackthorn.com"
+                        >info@blackthorn.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="footer-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Hipcamper FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="footer-menu">
+                    <li><a href="#">Hosting</a></li>
+                    <li><a href="#">Becoming a Host</a></li>
+                    <li><a href="#">Is My Land a Fit?</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Standards</a></li>
+                    <li><a href="#">Hosting FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="footer-menu">
+                    <li>
+                      <a href="#"><img src="images/f1.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/f2.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <p>SEE OUR CUSTOM ITEMS ON</p>
+                      <a href="#"><img src="images/f3.png" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer-bottom">
+            <ul class="quick-link">
+              <li><a href="#">Near Me</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Earn Hipcash</a></li>
+              <li><a href="#">Start hosting</a></li>
+              <li><a href="#">Log in</a></li>
+            </ul>
+            <div class="copyright">
+              <p>
+                Copyright © 2023 All Rights Reserved. Designed by
+                <a href="http://3raredesigns.com/">3 Rare Design</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <div class="m-body">
+          <h4 style="margin-bottom: 20px;">Ask Holcomb Valley R. a question</h4>
+          <div class="col-md-12">
+            <div class="form-group message">
+                <textarea  class="form-control" rows="4" name="message" placeholder="Write message" aria-label="Write message"></textarea>
+            </div>
+        </div>
+      
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal-2 -->
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 style="text-align:center; width: 100%;">Share To</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <div class="m-body1">
+       <img src="images/facebook.png" alt="">
+       <img src="images/whatsapp.png" alt="">
+       <img src="images/gmail.png" alt="">
+       <img src="images/twitter.png" alt="">
+        </div>
+      
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/wow.min.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script>
+      $(window).scroll(function(){
+        if ($(window).scrollTop() >= 100) {
+            $('.header-bottom').addClass('fixed-header');
+        }
+        else {
+            $('.header-bottom').removeClass('fixed-header');
+        }
+      });
+    </script>
+     <script>
+        const readMoreBtn = document.querySelector('.booking-history .read-more');
+        const tbody = document.querySelector('.booking-history table tbody');
+      
+        readMoreBtn.addEventListener('click', function() {
+          tbody.classList.toggle('expanded');
+          if (tbody.classList.contains('expanded')) {
+            readMoreBtn.innerText = 'Read Less';
+          } else {
+            readMoreBtn.innerText = 'Read More';
+          }
+        });
+      </script>
+    
+</body>
+</html>

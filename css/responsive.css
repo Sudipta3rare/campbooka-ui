@@ -1,0 +1,105 @@
+@media (max-width: 1440px) {
+
+}
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+}
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+	
+}
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+    .header-bottom .container-fluid .row {
+        flex-direction: column;
+      }
+      
+    
+      .header-bottom .container-fluid .row > div {
+        margin-bottom: 10px;
+      }
+    
+      .header-bottom .container-fluid .row > div:last-child {
+        margin-bottom: 0;
+      }
+      .header-bottom .container-fluid .row > div {
+        padding: 5px;
+      }
+    
+      .header-bottom .container-fluid .row > div:first-child {
+        margin-bottom: 10px;
+      }
+
+      .service-wrap{
+        padding: 40px 0;
+      }
+      .wrap-1 .left-text h2 {
+        font-family: 'Libre Baskerville';
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .wrap-1 .left-text p {
+        
+        font-size: 14px;
+        margin-top: 17px;
+    }
+
+    .works h2 {
+
+       font-size: 24px;
+    }
+
+    .testimonials .item-wrap .testi-text span{
+        margin-left: -11px;
+    }
+    .testi-text p{
+        font-size: 20px;
+    }
+    .provide h3{
+        font-size: 24px;
+    }
+    .provide-wrap p{
+        font-size: 14px;
+    }
+    .hipcamp .what-div .insurence{
+        margin-left: 0;
+    }
+
+    .hipcamp .section-1 h5{
+        font-size: 24px;
+        padding: 15px 0;
+    }
+
+    .testimonials .item-wrap .testi-text span{
+        font-size: 4rem;
+    }
+
+    .provide .benifit-wrap .provide-wrap h6{
+        font-size: 15px;
+    }
+
+    .cover-pic{
+        max-inline-size: 100%;
+        block-size: auto;
+        aspect-ratio: 2/1;
+    }
+
+    .modal-title{
+        margin-left: 0;
+    }
+
+    .footer-main .footer-bottom .quick-link{
+        flex-flow: column;
+    }
+
+
+}
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+ 
+}

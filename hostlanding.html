@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="img/logo.png" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/settings.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet" />
+          
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+          
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        
+      
+        <title>HostLanding</title>
+      </head>
+<body>
+
+
+  <header class="header-main">
+    <nav class="navbar navbar-expand-lg navbar-light nav1 ">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" width="50" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#">Insurance </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Professional Campground</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="btn btn-primary m-btn1" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+    
+
+
+  <!-- Modal1 -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content login">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Login | Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs m-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active m-btn1" data-toggle="tab" href="#tabs-1" role="tab">Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link m-btn1" data-toggle="tab" href="#tabs-2" role="tab">Register</a>
+  </li>
+</ul><!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+    <div class="form-sec" id="my_form">
+                           <form class="rd-mailform1" name="loginform" id="loginform" action="" method="post">
+                <div class="row">
+                  
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="user_login"  size="20" value="" name="log" placeholder="Email or Phone Number">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input class="form-control" id="user_pass" type="password" size="20" value="" name="pwd" placeholder="*Password">
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="text-left m-login">
+                  <!-- <button class="contact_submit_btn" type="submit">Login</button> -->
+                  <a href="host-dashboard.html" type="submit" class="contact_submit_btn m-btn1 btn btn-primary">Login</a>
+                  <input type="hidden" value="" name="redirect_to">
+<input type="hidden" value="1" name="testcookie">
+                </div>
+              </form>
+            </div>
+  </div>
+  <div class="tab-pane" id="tabs-2" role="tabpanel">
+    <div class="form-sec" id="my_form">
+              <form class="rd-mailform1 reg_frm" method="post">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control reg_name" id="rg_name" name="name" required placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control reg_email" id="rg_email" name="email" required placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control reg_ph" required placeholder="Contact Number">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control reg_pass" required placeholder="*Password">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control reg_c_pass" required placeholder="*Confirm Password">
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="text-left m-login">
+                  <button  class="contact_submit_btn m-btn1 btn btn-primary" type="submit">Register</button>
+                </div>
+              </form>
+              <span class="my-reg" style="color: green;"></span>
+            </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="hero">
+        <div class="container-wrap">
+          <img style="object-fit: cover;" height="400px" width="100%" src="images/mimage.jpg" class="cover-pic">
+        </div>
+    </section>
+
+
+    <section class="hipcamp">
+      <div class="container">
+        <div class="what-div">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <div class="section-1">
+                <h5 >What is Campbooka ?</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima qui placeat fugiat nisi error libero odio ipsam ut quod repudiandae natus, laudantium nihil aliquam voluptatum illo dolorum dignissimos ad.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="insurence ">
+                <h5 class="border-1">
+                  $100000 insurance <br> policy provided
+                </h5>
+                <p>
+                  We are thrilled to provide the peace of mind that you will be taken care of. Our Campbooka Insurance Policy protects hosts for up to $1 million for general liability claims per occurrence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="works">
+      <div class="container">
+        <h2>How Campbooka Works in 3 steps</h2>
+        <div class="works-img">
+        <div class="row">
+            <div class="col-md-4">
+            <div class="works-wrap ">
+              <img src="images/discover4.png" alt="logo">
+              <p><span>Its Free
+                </span>Starting a listing is completely free and easy—it only takes minutes from start to publish.
+              </p>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="works-wrap ">
+                <img src="images/discover4.png" alt="logo">
+                <p><span>Its Free
+                </span>Starting a listing is completely free and easy—it only takes minutes from start to publish.
+              </p>
+              </div>
+              </div>
+  
+              <div class="col-md-4">
+                <div class="works-wrap ">
+                  <img src="images/discover4.png" alt="logo">
+                  <p><span>Its Free
+                </span>Starting a listing is completely free and easy—it only takes minutes from start to publish.
+              </p>
+                </div>
+                </div></div>
+          
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="need d-none d-md-block d-lg-block d-sm-none">
+      <div class="container">
+          <div class="wrap-1">
+            <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="left-text">
+                <h2>You need less than you think.</h2>
+                <p>Campbooka features simple plots of land, developed cabins, and everything in between. No matter what you have, there’s no need to wait to get started.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-box">
+                <img src="images/place1.png" alt="place1" class="responsive-img">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-box">
+                <img src="images/place1.png" alt="place1" class="responsive-img">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="left-text">
+                <h2>You need less than you think.</h2>
+                <p>Campbooka features simple plots of land, developed cabins, and everything in between. No matter what you have, there’s no need to wait to get started.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="left-text">
+                <h2>You need less than you think.</h2>
+                <p>Campbooka features simple plots of land, developed cabins, and everything in between. No matter what you have, there’s no need to wait to get started.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-box">
+                <img src="images/place1.png" alt="place1" class="responsive-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="need d-block d-md-none d-lg-none d-sm-block">
+      <div class="container">
+          <div class="wrap-1">
+            <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="right-box">
+                <img src="images/place1.png" alt="place1" class="responsive-img">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="left-text">
+                <h2>You need less than you think.</h2>
+                <p>Campbooka features simple plots of land, developed cabins, and everything in between. No matter what you have, there’s no need to wait to get started.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-box">
+                <img src="images/place1.png" alt="place1" class="responsive-img">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="left-text">
+                <h2>You need less than you think.</h2>
+                <p>Campbooka features simple plots of land, developed cabins, and everything in between. No matter what you have, there’s no need to wait to get started.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-box">
+                <img src="images/place1.png" alt="place1" class="responsive-img">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="left-text">
+                <h2>You need less than you think.</h2>
+                <p>Campbooka features simple plots of land, developed cabins, and everything in between. No matter what you have, there’s no need to wait to get started.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="faq">
+      <h3 class="section-head">
+          Frequently  Asked  Question
+        </h3>
+        <div class="container-fluid">
+        <div class="faq-wrap">
+         <div class="row">
+           <div class="col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                  <div class="card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">     
+                      <span class="title">Do you offer a free consultation? </span>
+                      <span class="accicon"><i class="fa fa-angle-down rotate-icon up-arrow"></i></span>
+                  </div>
+                  <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                      <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">     
+                      <span class="title">Do you offer a free consultation?</span>
+                      <span class="accicon"><i class="fa fa-angle-down rotate-icon up-arrow"></i></span>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                      <span class="title">Do you offer a free consultation?</span>
+                      <span class="accicon"><i class="fa fa-angle-down rotate-icon up-arrow"></i></span>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                  </div>
+              </div>
+          </div>
+           </div>
+          
+           <div class="col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                  <div class="card-header" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true">     
+                      <span class="title">Do you offer a free consultation? </span>
+                      <span class="accicon"><i class="fa fa-angle-down rotate-icon up-arrow"></i></span>
+                  </div>
+                  <div id="collapsefour" class="collapse show" data-parent="#accordionExample">
+                      <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapseTwo">     
+                      <span class="title">Do you offer a free consultation?</span>
+                      <span class="accicon"><i class="fa fa-angle-down rotate-icon up-arrow"></i></span>
+                  </div>
+                  <div id="collapsefive" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false">
+                      <span class="title">Do you offer a free consultation?</span>
+                      <span class="accicon"><i class="fa fa-angle-down rotate-icon up-arrow"></i></span>
+                  </div>
+                  <div id="collapsesix" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                  </div>
+              </div>
+          </div>
+           </div>
+         </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="testimonials">
+      
+      <div class="container">
+        <div id="testimonial" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="item-wrap">
+              <div class="row align-items-center">
+               <div class="col-md-6">
+                <div class="testi-img">
+                  <img src="images/discover1.png">
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="testi-text">
+                    <span>❝</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-wrap">
+              <div class="row align-items-center">
+               <div class="col-md-6">
+                <div class="testi-img">
+                  <img src="images/discover1.png">
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="testi-text">
+                    <span>❝</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-wrap">
+              <div class="row align-items-center">
+               <div class="col-md-6">
+                <div class="testi-img">
+                  <img src="images/discover1.png">
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="testi-text">
+                    <span>❝</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-wrap">
+              <div class="row align-items-center">
+               <div class="col-md-6">
+                <div class="testi-img">
+                  <img src="images/discover1.png">
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="testi-text">
+                    <span>❝</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+          <div class="item"><div class="item-wrap">
+            <div class="row align-items-center">
+             <div class="col-md-6">
+              <div class="testi-img">
+                <img src="images/discover1.png">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="testi-text">
+                  <span>❝</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet voluptatem facilis fugit. Obcaecati rem repudiandae praesentium quas pariatur qui facere blanditiis cumque quae, autem recusandae, quis voluptatum commodi explicabo?</p>
+                </div>
+              </div>
+             
+            </div>
+          </div></div>
+      </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section class="provide">
+      <div class="container">
+        <h3>What does CampBooka Provide</h3>
+
+        <div class=benifit-wrap>
+          <div class="row">
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                100% free to use
+              </h6>
+              <p>Creating a listing is completely free with no strings attached. You keep 90% of your earnings from bookings, and Campbooka uses the remaining 10% for your support team access and insurance</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                Calendar management software
+              </h6>
+              <p>Sync your calendar with as many external calendars as you’d like. Your Campbooka calendar will automatically update when your other calendars do.</p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                Support 365 days a year
+              </h6>
+              <p>Our passionate support team is on call for you 7 days a week, whether you need help with a booking or just have a quick question about your listing.</p>
+            </div>
+          </div>
+  
+         </div>
+        </div>
+       
+       <div class="benifit-wrap">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                $1 million USD insurance policy
+              </h6>
+              <p>Creating a listing is completely free with no strings attached. You keep 90% of your earnings from bookings, and Campbooka uses the remaining 10% for your support team access and insurance</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                Professional photography
+              </h6>
+              <p>Creating a listing is completely free with no strings attached. You keep 90% of your earnings from bookings, and Campbooka uses the remaining 10% for your support team access and insurance</p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                Fire ban notification tool
+              </h6>
+              <p>Creating a listing is completely free with no strings attached. You keep 90% of your earnings from bookings, and Campbooka uses the remaining 10% for your support team access and insurance</p>
+            </div>
+          </div>
+  
+         </div>
+       </div>
+       
+
+
+       <div class="benifit-wrap">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                100% free to use
+              </h6>
+              <p>Creating a listing is completely free with no strings attached. You keep 90% of your earnings from bookings, and Campbooka uses the remaining 10% for your support team access and insurance</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                100% free to use
+              </h6>
+              <p>Creating a listing is completely free with no strings attached. You keep 90% of your earnings from bookings, and Campbooka uses the remaining 10% for your support team access and insurance</p>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="provide-wrap">
+              <img height="60px" width="60px" src="images/tent1.png">
+              <h6>
+                100% free to use
+              </h6>
+              <p>Creating a listing is completely free with no strings attached. You keep 90% of your earnings from bookings, and Campbooka uses the remaining 10% for your support team access and insurance</p>
+            </div>
+          </div>
+  
+         </div>
+       </div>
+       
+       
+    </div>
+    </section>
+
+
+
+
+    <footer class="footer-main">
+      <div class="container">
+        <div class="footer-logo">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+      </div>
+      <div class="footer-top">
+        <div class="footer-wrap">
+          <div class="row">
+            <div class="col-md-3">
+              <h4>Contact Us</h4>
+              <ul class="footer-contact">
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">123 Our Address</a></li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0433355558">0433355558</a></li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@blackthorn.com">info@blackthorn.com</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Hipcamper FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-menu">
+                <li><a href="#">Hosting</a></li>
+                <li><a href="#">Becoming a Host</a></li>
+                <li><a href="#">Is My Land a Fit?</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Standards</a></li>
+                <li><a href="#">Hosting FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-menu">
+                <li><a href="#"><img src="images/f1.png" alt=""></a></li>
+                <li><a href="#"><img src="images/f2.png" alt=""></a></li>
+                <li><p>SEE OUR CUSTOM ITEMS ON</p><a href="#"><img src="images/f3.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <ul class="quick-link">
+          <li><a href="#">Near Me</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Earn Hipcash</a></li>
+          <li><a href="#">Start hosting</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+        <div class="copyright">
+          <p>Copyright © 2023 All Rights Reserved. Designed by <a href="http://3raredesigns.com/">3 Rare Design</a></p>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  
+</body>
+</html>
