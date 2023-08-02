@@ -152,28 +152,18 @@ async function getDataForPlaces() {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({placeId: 1})
     });
+
     const propertyData =await response.json();
     
     
-    console.log("hello");
     const data = JSON.parse(localStorage.getItem("place"));
-
- 
-    console.log(data);
-    console.log("up")
-    
     const title = document.getElementById("placeName");
     title.innerHTML = data.placeName;
-
     const acres = document.getElementById("noOfAcres");
-    acres.innerHTML = data.acres;
-    console.log(data);
-    console.log("mid");
-    const sites = document.getElementById("noOfSites");
-    sites.innerHTML = data.noOfSites;
+    acres.innerHTML = data.acres + " acres";
+    const sites = document.getElementById("ites");
+    sites.innerHTML = data.noOfSites + " sites";
 
-    console.log(data);
-    console.log("end");
 
    
     const propertyContainer = document.getElementById("propertyContainer");
