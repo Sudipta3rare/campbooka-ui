@@ -1,5 +1,5 @@
 async function getDataFromBackend() {
-    const response = await fetch("http://192.168.7.68:8080/api/searchLocation/USA");
+    const response = await fetch("http://localhost:8080/api/searchLocation/USA");
     
  
     return response.json();
@@ -11,7 +11,6 @@ async function putDataInDropdown() {
      locationIdList.push(data[0].id);
      locationIdList.push(data[1].id);
      locationIdList.push(data[2].id);
-     console.log(locationIdList);
      var selecetedLocationId;
     const item1 = document.createElement("a");
     item1.innerHTML = data[0].locationName + "," + data[0].countryName;
@@ -25,7 +24,6 @@ async function putDataInDropdown() {
 
     const dropdown = document.getElementById("searchDropdown");
 
-    console.log(dropdown.childNodes);
 
     while (dropdown.childNodes.length > 0 ) {
         console.log("Removed last elements...");
@@ -84,14 +82,13 @@ async function putDataInPlacesCards() {
     localStorage.clear();
     
   
-    const response = await fetch("http://192.168.7.68:8080/api/getPlaceByLocation", {
+    const response = await fetch("http://localhost:8080/api/getPlaceByLocation", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(requestBody)
     });
 
     const data = await response.json();
-    console.log(data);
 
     const t = document.getElementById("columnContainer");
     
@@ -147,14 +144,14 @@ async function putDataInPlacesCards() {
 }
 
 async function getDataForPlaces() {
-    const response = await fetch("http://192.168.7.68:8080/api/postPropertyFromPlaceId", {
+    const response = await fetch("http://localhost:8080/api/postPropertyFromPlaceId", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({placeId: 1})
+        body: JSON.stringify({
+            placeId : JSON.parse(localStorage.getItem("place")).id,
+        })
     });
-
     const propertyData =await response.json();
-    
     
     const data = JSON.parse(localStorage.getItem("place"));
     const title = document.getElementById("placeName");
@@ -164,134 +161,149 @@ async function getDataForPlaces() {
     const sites = document.getElementById("ites");
     sites.innerHTML = data.noOfSites + " sites";
 
+    const description = document.getElementById("description");
+    description.innerHTML = data.descrip;
+
 
    
     const propertyContainer = document.getElementById("propertyContainer");
+          
+    for(let i = 0; i<propertyData.length ; i++ ){
+
+        let row = document.createElement("div");
+        row.className = "col-md-12";
+        row.style="padding: 25px 0;";
+
+        let propertyWrapBox = document.createElement("div");
+        propertyWrapBox.className="viewproperty-wrap-box";
+
+        let propertyWrapBoxChild = document.createElement("div");
+        propertyWrapBoxChild.className="row align-items-center";
+
+        let col = document.createElement("div");
+        col.className = "col-md-3";
+
+        let pic_wrap = document.createElement("div");
+        pic_wrap.className= "pic_wrap";
+
+        let img = document.createElement("img");
+        img.src ="images/g1.png";
+        img.alt = "camp1";
+
+        pic_wrap.appendChild(img);
+        col.appendChild(pic_wrap);
+        
+        let colMd7 = document.createElement("div");
+        colMd7.className = "col-md-7";
+
+        let desWrap = document.createElement("div");
+        desWrap.className = "des-wrap";
+
+        let propertyName = document.createElement("h6");
+        propertyName.innerHTML ="Property name: "
+
+        let spanEle = document.createElement("span");
+        spanEle.innerHTML=propertyData[i].propertyName;
+      
     
-    const row = document.createElement("div");
-    row.className = "col-md-12";
-    row.style="padding: 25px 0;";
-
-    const propertyWrapBox = document.createElement("div");
-    propertyWrapBox.className="viewproperty-wrap-box";
-
-    const propertyWrapBoxChild = document.createElement("div");
-    propertyWrapBoxChild.className="row align-items-center";
-
-    const col = document.createElement("div");
-    col.className = "col-md-3";
-
-    const pic_wrap = document.createElement("div");
-    pic_wrap.className= "pic_wrap";
-
-    const img = document.createElement("img");
-    img.src ="images/g1.png";
-    img.alt = "camp1";
-
-    pic_wrap.appendChild(img);
-    col.appendChild(pic_wrap);
     
-    const colMd7 = document.createElement("div");
-    colMd7.className = "col-md-7";
+        const ptagt1 = document.createElement("p");
+        ptagt1.className = "t1";
+        ptagt1.innerHTML = "Property Type: ";
 
-    const desWrap = document.createElement("div");
-    desWrap.className = "des-wrap";
+        const ptagt2 = document.createElement("p");
+        ptagt2.className = "t2";
+        ptagt2.innerHTML = "Area: ";
 
-    const propertyName = document.createElement("h6");
-    propertyName.innerHTML ="Property name: "
+        const ptagt3 = document.createElement("p");
+        ptagt3.className = "t3";
+        ptagt3.innerHTML = "Description: ";
 
-    const spanEle = document.createElement("span");
-    spanEle.innerHTML="Baskervilles";
+        const ptagt4 = document.createElement("p");
+        ptagt4.className = "t4";
+        ptagt4.innerHTML = "Location: ";
+
+        const siTaxiOp = document.createElement("p");
+        siTaxiOp.className = "siTaxiOp"
+        siTaxiOp.innerHTML = "Free airport taxi";
+      
+        propertyName.appendChild(document.createTextNode(spanEle.innerHTML));
+
+        spanEle.innerHTML=propertyData[i].accomodationType;
+     
+        ptagt1.appendChild(document.createTextNode(spanEle.innerHTML));
+
+        spanEle.innerHTML = propertyData[i].area + " sq-ft";
+        ptagt2.appendChild(document.createTextNode(spanEle.innerHTML));
+
+        spanEle.innerHTML = propertyData[i].descrip;
+        ptagt3.appendChild(document.createTextNode(spanEle.innerHTML));
+
+        spanEle.innerHTML =  data.placeName;
+        ptagt4.appendChild(document.createTextNode(spanEle.innerHTML));
+
+        desWrap.appendChild(propertyName);
+        desWrap.appendChild(ptagt1);
+        desWrap.appendChild(ptagt2);
+        desWrap.appendChild(ptagt3);
+        desWrap.appendChild(ptagt4);
     
-    const ptagt1 = document.createElement("p");
-    ptagt1.className = "t1";
-    ptagt1.innerHTML = "Property Type:";
+        desWrap.appendChild(siTaxiOp);
+        colMd7.appendChild(desWrap);
 
-    const ptagt2 = document.createElement("p");
-    ptagt2.className = "t2";
-    ptagt2.innerHTML = "Area:";
+        let colMd2 = document.createElement("div");
+        colMd2.className = "col-md-2";
 
-    const ptagt3 = document.createElement("p");
-    ptagt3.className = "t3";
-    ptagt3.innerHTML = "Description:";
+        let updateWrap = document.createElement("div");
+        updateWrap.className= "update-wrap";
 
-    const ptagt4 = document.createElement("p");
-    ptagt4.className = "t4";
-    ptagt4.innerHTML = "Location:";
+        let siDetials= document.createElement("div")
+        siDetials.className ="siDetails";
 
-    const siTaxiOp = document.createElement("span");
-    siTaxiOp.className = "siTaxiOp"
+        let siRating = document.createElement("div");
+        siRating.className="siRating";
 
-    propertyName.appendChild(spanEle)
-    
-    spanEle.innerHTML="Tiny Cottage";
-    ptagt1.appendChild(spanEle);
+        let excelSpan = document.createElement("span");
+        excelSpan.innerHTML ="Excellent";
 
-    spanEle.innerHTML = "400 sq-ft";
-    ptagt2.appendChild(spanEle);
+        let button = document.createElement("button");
+        button.innerHTML = propertyData[i].reviews;
 
-    spanEle.innerHTML = "Entire studio";
-    ptagt3.appendChild(spanEle);
+        siRating.appendChild(excelSpan);
+        siRating.appendChild(button);
 
-    spanEle.innerHTML = "Mumbai";
-    ptagt4.appendChild(spanEle);
+        let siDetailsTexts = document.createElement("div");
+        siDetailsTexts.classList = "siDetailTexts";
 
-    desWrap.appendChild(propertyName);
-    desWrap.appendChild(ptagt1);
-    desWrap.appendChild(ptagt2);
-    desWrap.appendChild(ptagt3);
-    desWrap.appendChild(ptagt4);
-    colMd7.appendChild(desWrap);
+        let siPrice = document.createElement("span");
+        siPrice.className = "siPrice";
+        siPrice.innerHTML = "$ " + propertyData[i]?.price;
 
-    const colMd2 = document.createElement("div");
-    colMd2.className = "col-md-2";
+        let siTaxOp = document.createElement("span");
+        siTaxOp.className = "siTaxOp"
+        siTaxOp.innerHTML="Includes taxes and fees";
 
-    const updateWrap = document.createElement("div");
-    updateWrap.className= "update-wrap";
+        let anch = document.createElement("a");
+        anch.href = "checkoutrule.html";
+        anch.className="btn btn-primary btn-sm";
+        anch.innerHTML="Reserve";
 
-    const siDetials= document.createElement("div")
-    siDetials.className ="siDetails";
+        siDetailsTexts.appendChild(siPrice);
+               
+        siDetailsTexts.appendChild(siTaxOp);
+        siDetailsTexts.appendChild(anch);
 
-    const siRating = document.createElement("div");
-    siRating.className="siRating";
+        siDetials.appendChild(siRating);
+        siDetials.append(siDetailsTexts);
+        updateWrap.appendChild(siDetials);
+        colMd2.appendChild(updateWrap);
 
-    const excelSpan = document.createElement("span");
-    excelSpan.innerHTML ="Excellent";
+        propertyWrapBoxChild.appendChild(col);
+        propertyWrapBoxChild.appendChild(colMd7);
+        propertyWrapBoxChild.appendChild(colMd2);
 
-    const button = document.createElement("button");
-    button.innerHTML = "8.9"
-
-    siRating.appendChild(excelSpan);
-    siRating.appendChild(button);
-
-    const siDetailsTexts = document.createElement("div");
-    siDetailsTexts.classList = "siDetailsTexts";
-
-    const siPrice = document.createElement("span");
-    siPrice.className = "siPrice";
-    siPrice.innerHTML = "$112";
-
-    const anch = document.createElement("a");
-    anch.href = "checkoutrule.html";
-    anch.className="btn btn-primary btn-sm";
-    anch.innerHTML="Reserve";
-
-    siDetailsTexts.appendChild(siPrice);
-    siTaxiOp.innerHTML="Includes taxes and fees";
-    siDetailsTexts.appendChild(siTaxiOp);
-    siDetailsTexts.appendChild(anch);
-
-    siDetials.appendChild(siRating);
-    siDetials.append(siDetailsTexts);
-    updateWrap.appendChild(siDetials);
-    colMd2.appendChild(updateWrap);
-
-    propertyWrapBoxChild.appendChild(col);
-    propertyWrapBoxChild.appendChild(colMd7);
-    propertyWrapBoxChild.appendChild(colMd2);
-
-    propertyWrapBox.appendChild(propertyWrapBoxChild);
-    row.appendChild(propertyWrapBox);
-    propertyContainer.appendChild(row)    
-
+        propertyWrapBox.appendChild(propertyWrapBoxChild);
+        row.appendChild(propertyWrapBox);
+        propertyContainer.appendChild(row)    
+    }
 }
